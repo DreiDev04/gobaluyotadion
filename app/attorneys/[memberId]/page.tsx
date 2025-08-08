@@ -11,9 +11,9 @@ import { Card, CardContent } from "@/components/ui/card";
 export default async function MemberPage({
   params,
 }: {
-  params: { memberId: string };
+  params: Promise<{ memberId: string }>;
 }) {
-  const { memberId } = params;
+  const { memberId } = await params;
 
   const member = getDetails(memberId);
 
