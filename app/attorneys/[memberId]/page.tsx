@@ -3,17 +3,15 @@ import { getDetails } from "@/lib/utils";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Award, Gavel, Phone } from "lucide-react";
+import { Phone, Scale } from "lucide-react";
 import Link from "next/link";
-import { Scale } from "lucide-react";
-import { Metadata } from "next";
 
-export default async function MemberPage({
-  params,
-}: {
+interface MemberPageProps {
   params: Promise<{ memberId: string }>;
-}) {
-  const memberId = (await params).memberId;
+}
+
+export default async function MemberPage({ params }: MemberPageProps) {
+  const { memberId } = await params;
 
   const member = getDetails(memberId);
 
