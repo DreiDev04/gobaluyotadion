@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Award, Gavel, Phone } from "lucide-react";
 import Link from "next/link";
 import { Scale } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Metadata } from "next";
 
-interface MemberPageProps {
-  params: { memberId: string };
-}
+type Props = {
+  params: Promise<{ memberId: string }>;
+};
 
-export default async function MemberPage({ params }: MemberPageProps) {
-  const { memberId } = params; // no await needed
+export default async function MemberPage({ params }: Props) {
+  const memberId = (await params).memberId;
 
   const member = getDetails(memberId);
 
