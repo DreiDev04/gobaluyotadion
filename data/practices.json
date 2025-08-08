@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Corporate & Business Law",
+    "description": "Comprehensive legal solutions for businesses from formation to dissolution, covering governance, contracts, compliance, and transactions.",
+    "expertise": ["Business Formation", "Corporate Governance", "Mergers & Acquisitions", "Regulatory Compliance", "Taxation", "Dispute Resolution", "Corporate Rehabilitation", "Small Claims"],
+    "icon": "🏛️"
+  },
+  {
+    "title": "Criminal Prosecution & Defense",
+    "description": "Skilled representation for individuals and businesses in criminal investigations, trials, and appeals.",
+    "expertise": ["Preliminary Investigation", "Criminal Defense", "Appeals", "Prosecution Support"],
+    "icon": "🛡️"
+  },
+  {
+    "title": "Family Law",
+    "description": "Compassionate legal assistance in family and domestic matters, from marriage to child custody and protection.",
+    "expertise": ["Marriage", "Annulment", "Recognition of Foreign Divorce", "Legal Separation", "Child Custody", "Child Support", "Adoption", "Domestic Violence Protection"],
+    "icon": "👨‍👩‍👧‍👦"
+  },
+  {
+    "title": "Intellectual Property",
+    "description": "Protecting and enforcing clients' rights over creative works, inventions, and brand assets.",
+    "expertise": ["Patents", "Trademarks", "Copyright", "Licensing", "Enforcement", "Registration", "Maintenance"],
+    "icon": "🔒"
+  },
+  {
+    "title": "Family & Business Governance & Succession",
+    "description": "Helping family-owned businesses create governance structures, succession plans, and agreements that ensure sustainability.",
+    "expertise": ["Family Constitution", "Succession Planning", "Pre-nuptial Agreements", "Governance Policies"],
+    "icon": "📜"
+  },
+  {
+    "title": "Labor & Employment",
+    "description": "Advising employers and employees on workplace policies, contracts, and labor disputes.",
+    "expertise": ["Employment Contracts", "Labor Standards Compliance", "Wrongful Termination", "Collective Bargaining", "Workplace Policies", "Dispute Resolution"],
+    "icon": "💼"
+  },
+  {
+    "title": "Real Estate & Land Titles",
+    "description": "Legal services for property transactions, development, titling, and disputes.",
+    "expertise": ["Property Acquisition", "Leasing", "Land Titling", "Property Development", "Title Reconstitution", "Real Estate Litigation", "Recovery of Possession", "Quieting of Title"],
+    "icon": "🏢"
+  },
+  {
+    "title": "Agrarian Law & Tenancy Issues",
+    "description": "Guidance on agricultural land use, tenancy disputes, and related regulatory compliance.",
+    "expertise": ["Agrarian Reform Compliance", "Tenancy Disputes", "Farmland Lease", "Agricultural Land Conversion"],
+    "icon": "🌾"
+  },
+  {
+    "title": "Local Government, Election, & Administrative",
+    "description": "Advising on matters involving local governance, elections, and administrative proceedings.",
+    "expertise": ["Local Government Powers", "Election Disputes", "Administrative Proceedings", "Public Office Eligibility", "Public Service Compliance"],
+    "icon": "🏛️"
+  },
+  {
+    "title": "Alternative Dispute Resolution & Arbitration",
+    "description": "Resolving conflicts efficiently outside of court through mediation, arbitration, and other ADR processes.",
+    "expertise": ["Mediation", "Arbitration", "Negotiated Settlements", "Conflict Resolution"],
+    "icon": "⚖️"
+  }
+]
