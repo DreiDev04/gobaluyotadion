@@ -13,12 +13,12 @@ export default async function MemberPage({
 }: {
   params: { memberId: string };
 }) {
-  const { memberId } = await params;
+  const { memberId } = params;
 
   const member = getDetails(memberId);
 
   if (!member) {
-    return notFound;
+    return notFound();
   }
 
   return (
@@ -77,18 +77,17 @@ export default async function MemberPage({
             <div className="space-y-4 md:space-y-6">
               <p className="text-base md:text-lg leading-relaxed ">
                 {(member.type === "partner" || member.type === "associate") &&
-                  member.about && (
-                    member.about.includes("\n") ? (
-                      member.about.split("\n").map((line: string, index: number) => (
-                        <span key={index}>
-                          {line}
-                          <br />
-                        </span>
-                      ))
-                    ) : (
-                      member.about
-                    )
-                  )}
+                  member.about &&
+                  (member.about.includes("\n")
+                    ? member.about
+                        .split("\n")
+                        .map((line: string, index: number) => (
+                          <span key={index}>
+                            {line}
+                            <br />
+                          </span>
+                        ))
+                    : member.about)}
               </p>
             </div>
 
@@ -101,17 +100,13 @@ export default async function MemberPage({
                   <p className="font-medium text-base md:text-lg">
                     {member.educationDetails?.LawSchool.degree}
                   </p>
-                  <p>
-                    {member.educationDetails?.LawSchool.name}
-                  </p>
+                  <p>{member.educationDetails?.LawSchool.name}</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4 transition-transform duration-300 hover:scale-105">
                   <p className="font-medium text-base md:text-lg">
                     {member.educationDetails?.College.degree}
                   </p>
-                  <p >
-                    {member.educationDetails?.College.name}
-                  </p>
+                  <p>{member.educationDetails?.College.name}</p>
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-serif text-accent">
@@ -147,9 +142,7 @@ export default async function MemberPage({
                         key={index}
                         className="border-l-2 border-primary pl-4 transition-transform duration-300 hover:scale-105"
                       >
-                        <h4 className="font-serif font-medium ">
-                          {org}
-                        </h4>
+                        <h4 className="font-serif font-medium ">{org}</h4>
                         <p className="text-secondary font-serif italic text-sm">
                           {role as string}
                         </p>
