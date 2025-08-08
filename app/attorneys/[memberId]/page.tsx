@@ -8,11 +8,11 @@ import Link from "next/link";
 import { Scale } from "lucide-react";
 import { Metadata } from "next";
 
-type Props = {
+export default async function MemberPage({
+  params,
+}: {
   params: Promise<{ memberId: string }>;
-};
-
-export default async function MemberPage({ params }: Props) {
+}) {
   const memberId = (await params).memberId;
 
   const member = getDetails(memberId);
