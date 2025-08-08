@@ -69,7 +69,7 @@ const page = () => {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/about-hero.jpg"
+            src="/images/hero.jpg"
             alt="Law Office"
             width={1920}
             height={1080}
@@ -110,7 +110,7 @@ const page = () => {
           </div>
           <div className="relative h-[400px] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl border border-border">
             <Image
-              src="/images/GBA-partners.png"
+              src="/images/partners.png"
               alt="Team Photo"
               width={800}
               height={600}
