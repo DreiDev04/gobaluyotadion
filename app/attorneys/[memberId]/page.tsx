@@ -29,6 +29,7 @@ export default async function MemberPage({ params }: MemberPageProps) {
             alt={member.name}
             width={1500}
             height={1500}
+            priority
             className="object-cover w-full h-full"
           />
         </div>

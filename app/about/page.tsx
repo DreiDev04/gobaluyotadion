@@ -5,33 +5,33 @@ const coreValues = [
   {
     title: "Excellence",
     desc: "Committed to delivering the highest quality legal services",
-    icon: "⚖️"
+    icon: "⚖️",
   },
   {
     title: "Integrity",
     desc: "Upholding the highest ethical standards in all our dealings",
-    icon: "🤝"
+    icon: "🤝",
   },
   {
     title: "Client Focus",
     desc: "Dedicated to understanding and meeting our clients' needs",
-    icon: "👥"
+    icon: "👥",
   },
   {
     title: "Innovation",
     desc: "Embracing modern solutions to legal challenges",
-    icon: "💡"
+    icon: "💡",
   },
   {
     title: "Collaboration",
     desc: "Working together to achieve the best possible outcomes",
-    icon: "🤲"
+    icon: "🤲",
   },
   {
     title: "Transparency",
     desc: "Clear communication and honest relationships with our clients",
-    icon: "📜"
-  }
+    icon: "📜",
+  },
 ];
 
 const timelineData = [
@@ -73,6 +73,7 @@ const page = () => {
             alt="Law Office"
             width={1920}
             height={1080}
+            priority
             className="w-full h-full object-cover opacity-70"
           />
         </div>
@@ -109,10 +110,11 @@ const page = () => {
           </div>
           <div className="relative h-[400px] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl border border-border">
             <Image
-              src="/partners/gba-partners.png"
+              src="/images/GBA-partners.png"
               alt="Team Photo"
               width={800}
               height={600}
+              priority
               className="w-full h-full object-cover"
             />
           </div>
@@ -134,7 +136,8 @@ const page = () => {
             Our Core Values
           </h2>
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-            The principles that guide our practice and define our commitment to excellence in legal services
+            The principles that guide our practice and define our commitment to
+            excellence in legal services
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreValues.map((value, i) => (
@@ -144,8 +147,10 @@ const page = () => {
                 shadow-lg hover:shadow-xl transition-all duration-300 
                 border border-border hover:border-primary/50 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 
-                opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div
+                  className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                />
                 <span className="text-4xl mb-6 block transform group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </span>
