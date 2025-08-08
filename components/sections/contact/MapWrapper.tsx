@@ -9,7 +9,7 @@ const LocationMap = dynamic(
 
 export default function MapWrapper() {
   return (
-    <div className="aspect-[21/9] relative group">
+    <div className="aspect-[3/2] sm:aspect-[2/1] lg:aspect-[21/9] relative group">
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-primary/5 to-secondary/5 group-hover:opacity-75 transition-opacity pointer-events-none" />
       <LocationMap />
     </div>
