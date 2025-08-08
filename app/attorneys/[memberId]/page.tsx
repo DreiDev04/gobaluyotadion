@@ -8,12 +8,12 @@ import Link from "next/link";
 import { Scale } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-export default async function MemberPage({
-  params,
-}: {
-  params: Promise<{ memberId: string }>;
-}) {
-  const { memberId } = await params;
+interface MemberPageProps {
+  params: { memberId: string };
+}
+
+export default async function MemberPage({ params }: MemberPageProps) {
+  const { memberId } = params; // no await needed
 
   const member = getDetails(memberId);
 
