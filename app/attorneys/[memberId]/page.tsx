@@ -20,7 +20,7 @@ export default async function MemberPage({ params }: MemberPageProps) {
   }
 
   return (
-    <>
+  <div className="fade-in">
       {/* HERO*/}
       <section className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
         <div className="h-64 md:h-full w-full">
@@ -152,6 +152,6 @@ export default async function MemberPage({ params }: MemberPageProps) {
           </div>
         </div>
       </section>
-    </>
+  </div>
   );
 }

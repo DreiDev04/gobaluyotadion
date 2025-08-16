@@ -12,7 +12,7 @@ const page = () => {
       <div className="fixed inset-0 w-full">
         <Hero />
       </div>
-      <div className='flex flex-col min-h-screen z-10 relative'>
+    <div className='flex flex-col min-h-screen z-10 relative fade-in'>
         <div className="h-[50dvh] sm:h-screen"></div>
         <div className="w-full bg-background/98 backdrop-blur-xl flex-1">
           <Introduction />

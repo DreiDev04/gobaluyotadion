@@ -46,7 +46,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavbarDemo />
-          <main className="min-h-screen ">
+          <main className="min-h-screen fade-in">
             <div className="sm:h-20 sm:bg-primary sm:dark:bg-neutral-950/80" />
             {children}
           </main>

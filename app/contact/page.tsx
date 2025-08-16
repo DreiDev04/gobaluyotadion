@@ -37,7 +37,7 @@ const ContactInfo = ({
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-background">
+  <div className="min-h-screen bg-background fade-in">
       {/* Map Section */}
       <section className="relative w-full border-y border-border">
         <div className="max-w-[80rem] mx-auto">

@@ -201,7 +201,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-background">
+  <div className="min-h-screen bg-background fade-in">
       <section className="pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
