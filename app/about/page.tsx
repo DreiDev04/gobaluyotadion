@@ -69,7 +69,7 @@ const page = () => {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/slideshows/hero.jpg"
             alt="Law Office"
             width={1920}
             height={1080}
