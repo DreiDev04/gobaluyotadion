@@ -84,7 +84,7 @@ function PracticeAreaCard({
   link,
 }: PracticeAreaCardProps) {
   return (
-    <Card className="bg-card group relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 ">
+    <Card className="bg-card  group relative overflow-hidden shadow-lg transition-transform transform hover:scale-105">
       <CardHeader>
         <Icon className="w-12 h-12 text-primary p-1 " />
 
@@ -131,9 +131,7 @@ const PracticePreview = () => {
       </div>
       <div className="mt-12 text-center">
         <Button variant="default" size="lg" asChild>
-          <Link href="/practices">
-            View All Practice Areas
-          </Link>
+          <Link href="/practices">View All Practice Areas</Link>
         </Button>
       </div>
     </section>
