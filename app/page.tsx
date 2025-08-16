@@ -17,9 +17,6 @@ const page = () => {
         <div className="w-full bg-background/98 backdrop-blur-xl flex-1">
           <Introduction />
           <Partners />
-          <div className=" bg-background/90 backdrop-blur-xl">
-            <PracticePreview />
-          </div>
           <div className="bg-gradient-to-b from-primary/90 to-primary py-16 sm:py-24">
             <Question />
           </div>

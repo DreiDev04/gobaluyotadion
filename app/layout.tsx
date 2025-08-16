@@ -45,11 +45,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Header /> */}
           <NavbarDemo />
-          {/* <div className="fixed top-10 right-10 z-50 text-white">
-            <ModeToggle />
-          </div> */}
           <main className="min-h-screen ">
             <div className="sm:h-20 sm:bg-primary sm:dark:bg-neutral-950/80" />
             {children}
