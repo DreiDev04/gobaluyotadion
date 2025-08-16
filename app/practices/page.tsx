@@ -5,7 +5,7 @@ import practiceAreas from "@/data/practices.json";
 
 export default function PracticeAreasPage() {
   return (
-    <div className="min-h-screen ">
+  <div className="min-h-screen fade-in ">
       <div className="max-w-6xl mx-auto px-6 py-24">
         {/* Hero Section - Apple Style */}
         <div className="text-center mb-20">
