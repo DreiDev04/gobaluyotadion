@@ -108,12 +108,11 @@ const page = () => {
               diverse clients across various industries.
             </p>
           </div>
-          <div className="relative h-[400px] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl border border-border">
+          <div className="relative h-[250px] md:h-[400px] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl border border-border bg-primary">
             <Image
               src="/images/partners.png"
               alt="Team Photo"
-              width={800}
-              height={600}
+              fill
               priority
               className="w-full h-full object-cover"
             />

@@ -75,15 +75,18 @@ export function NavbarDemo() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-neutral-600 dark:text-neutral-300 flex items-center w-full"
               >
-                <span className="block">{item.name}</span>
-              </a>
+                <span className="block w-full text-center">{item.name}</span>
+              </Link>
             ))}
+            <div className="w-full items-center flex justify-center">
+              <ModeToggle />
+            </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>

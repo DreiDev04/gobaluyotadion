@@ -14,7 +14,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-[50dvh] sm:h-screen overflow-hidden">
       <ImagesSlider className="h-full" images={images}>
         <motion.div
           initial={{
@@ -34,10 +34,10 @@ const Hero = () => {
 
       <div className="absolute inset-0  pt-24 flex flex-col justify-center items-center px-4 text-center text-white">
         <div className="animate-fade-in-up">
-          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight">
+          <h1 className="text-4xl sm:text-7xl font-bold tracking-tight">
             Go Baluyot & Adion
           </h1>
-          <p className="mt-6 text-lg sm:text-2xl font-light max-w-2xl mx-auto leading-relaxed opacity-90">
+          <p className="mt-6 text-md sm:text-2xl font-light max-w-2xl mx-auto leading-relaxed opacity-90">
             Rooted in Integrity. Driven by Excellence.
           </p>
         </div>

@@ -51,8 +51,9 @@ export default function RootLayout({
             <ModeToggle />
           </div> */}
           <main className="min-h-screen ">
-            <div className="h-20 bg-primary dark:bg-neutral-950/80" />
-            {children}</main>
+            <div className="sm:h-20 sm:bg-primary sm:dark:bg-neutral-950/80" />
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

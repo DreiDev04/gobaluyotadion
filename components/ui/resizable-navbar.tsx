@@ -168,7 +168,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
-        visible && "bg-white/80 dark:bg-neutral-950/80",
+        visible && "bg-primary dark:bg-neutral-950/80",
         className
       )}
     >
@@ -236,11 +236,16 @@ export const NavbarLogo = () => {
   return (
     <Link
       href="/"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 "
     >
-      <Image src="/logos/column.png" alt="logo" width={80} height={50} />
+      <img
+        src="/logos/column.png"
+        alt="logo"
+
+        className="w-14 h-8 sm:w-20 sm:h-12"
+      />
       <div
-        className="flex flex-col items-center text-base"
+        className="flex flex-col items-center sm:text-base text-xs"
         style={{ fontFamily: "var(--font-garamond)" }}
       >
         <p className="text-white">GO BALUYOT & ADION</p>

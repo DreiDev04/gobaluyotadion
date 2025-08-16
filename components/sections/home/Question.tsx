@@ -33,7 +33,7 @@ const Question = () => {
                 className="rounded-full px-8 "
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Schedule a Consultation
+                  Contact Us
                   <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </span>
               </Button>

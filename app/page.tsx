@@ -9,11 +9,11 @@ import Question from '@/components/sections/home/Question';
 const page = () => {
   return (
     <>
-      <div className="fixed inset-0 w-full h-full z-0">
+      <div className="fixed inset-0 w-full">
         <Hero />
       </div>
       <div className='flex flex-col min-h-screen z-10 relative'>
-        <div className="h-screen"></div>
+        <div className="h-[50dvh] sm:h-screen"></div>
         <div className="w-full bg-background/98 backdrop-blur-xl flex-1">
           <Introduction />
           <Partners />
