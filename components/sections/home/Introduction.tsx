@@ -88,7 +88,7 @@ const Introduction = () => {
       <div className="text-lg font-semibold text-muted-foreground flex justify-center">
         <h1>TRUSTED BY LEADING TEAMS</h1>
       </div>
-      <div className="h-32 rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden mb-10">
+      <div className="rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden mb-10">
         <InfiniteMovingCards
           items={sponsors}
           direction="left"

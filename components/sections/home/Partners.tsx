@@ -65,6 +65,16 @@ const Partners = () => {
             <PartnerCard key={partner.name} partner={partner} />
           ))}
         </div>
+        <div className="flex justify-center mt-12">
+          <Button
+            variant="secondary"
+            size="lg"
+            className="rounded-full px-8 py-3 font-semibold shadow-md"
+            asChild
+          >
+            <Link href="/attorneys">Meet Our Attorneys</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
