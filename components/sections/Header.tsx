@@ -33,17 +33,18 @@ const Header = () => {
       )}
     >
       <div className="flex items-center gap-2">
-        <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-all">
-          <Image
-            src="/logos/logo clear.png"
-            alt="Go Baluyot & Adion Logo"
-            width={40}
-            height={40}
-            className="w-8 h-8 sm:w-10 sm:h-10"
-          />
-          <span className="font-semibold text-lg sm:text-xl">
-            Go Baluyot & Adion
-          </span>
+        <Link
+          href="/"
+          className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+        >
+          <Image src="/logos/column.png" alt="logo" width={80} height={50} />
+          <div
+            className="flex flex-col items-center text-base"
+            style={{ fontFamily: "var(--font-garamond)" }}
+          >
+            <p className="text-white ">GO BALUYOT & ADION</p>
+            <p className="text-secondary">—LAW OFFICE—</p>
+          </div>
         </Link>
       </div>
 
@@ -79,7 +80,9 @@ const Header = () => {
                 height={60}
                 className="mb-4"
               />
-              <DrawerTitle className="text-xl font-semibold mb-2">Go Baluyot & Adion</DrawerTitle>
+              <DrawerTitle className="text-xl font-semibold mb-2">
+                Go Baluyot & Adion
+              </DrawerTitle>
               <DrawerDescription className="flex items-center gap-2 text-primary">
                 <Phone className="w-4 h-4" /> +63 908 813 4289
               </DrawerDescription>
