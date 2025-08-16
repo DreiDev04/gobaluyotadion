@@ -6,12 +6,14 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import { Phone } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
+import { ModeToggle } from "../mode-toggle";
 
 export function NavbarDemo() {
   const navItems = [
@@ -46,9 +48,15 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+          <div className="flex items-center gap-4 text-background relative">
+            <Link
+              href="tel:+639088134289"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-full text-white"
+            >
+              <Phone className="w-4 h-4" /> +63 908 813 4289
+            </Link>
+            <div className="w-px h-6 bg-border" />
+            <ModeToggle />
           </div>
         </NavBody>
 
@@ -76,22 +84,6 @@ export function NavbarDemo() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>

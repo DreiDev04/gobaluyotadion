@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import { NavbarDemo } from "@/components/sections/NavbarDemo";
+import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
 const geistSans = Geist({
@@ -44,8 +45,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* <Header /> */}
           <NavbarDemo />
-          <main className="min-h-screen pt-16 sm:pt-20">{children}</main>
+          {/* <div className="fixed top-10 right-10 z-50 text-white">
+            <ModeToggle />
+          </div> */}
+          <main className="min-h-screen ">
+            <div className="h-20 bg-primary dark:bg-neutral-950/80" />
+            {children}</main>
           <Footer />
         </ThemeProvider>
       </body>

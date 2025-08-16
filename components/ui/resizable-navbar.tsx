@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import React, { useRef, useState } from "react";
 
@@ -70,7 +71,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     <motion.div
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("fixed inset-x-0 top-1 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-1 z-50 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -105,7 +106,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
-        visible && "bg-primary dark:bg-neutral-950/80",
+        visible && "text-white bg-primary dark:bg-neutral-950/80",
         className
       )}
     >
@@ -126,21 +127,21 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-white dark:text-neutral-300"
+          className="relative px-4 py-2 text-white"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-full bg-secondary dark:bg-neutral-800"
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -246,45 +247,5 @@ export const NavbarLogo = () => {
         <p className="text-secondary">—LAW OFFICE—</p>
       </div>
     </Link>
-  );
-};
-
-export const NavbarButton = ({
-  href,
-  as: Tag = "a",
-  children,
-  className,
-  variant = "primary",
-  ...props
-}: {
-  href?: string;
-  as?: React.ElementType;
-  children: React.ReactNode;
-  className?: string;
-  variant?: "primary" | "secondary" | "dark" | "gradient";
-} & (
-  | React.ComponentPropsWithoutRef<"a">
-  | React.ComponentPropsWithoutRef<"button">
-)) => {
-  const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
-
-  const variantStyles = {
-    primary:
-      "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
-    secondary: "bg-transparent shadow-none dark:text-white",
-    dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
-    gradient:
-      "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
-  };
-
-  return (
-    <Tag
-      href={href || undefined}
-      className={cn(baseStyles, variantStyles[variant], className)}
-      {...props}
-    >
-      {children}
-    </Tag>
   );
 };
