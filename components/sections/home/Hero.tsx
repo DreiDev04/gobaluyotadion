@@ -38,7 +38,7 @@ const Hero = () => {
             Go Baluyot & Adion
           </h1>
           <p className="mt-6 text-md sm:text-2xl font-light max-w-2xl mx-auto leading-relaxed opacity-90">
-            Rooted in Integrity. Driven by Excellence.
+            Excellence in Law. Integrity in Practice.
           </p>
         </div>
       </div>

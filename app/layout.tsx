@@ -3,9 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { EB_Garamond } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
 import { NavbarDemo } from "@/components/sections/NavbarDemo";
-import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
 const geistSans = Geist({
@@ -26,7 +24,21 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   title: "Go Baluyot & Adion Law Office",
-  description: "Professional legal services in the Philippines",
+  description:
+    "Premier Law Firm in Tarlac, Philippines - Expert Legal Services in Litigation, Corporate Law, Labor Law, Intellectual Property, Real Estate, Taxation, and Notarial Services.",
+  icons: {
+    icon: "/logos/tight-logo.png",
+  },
+  keywords: [
+    "law firm",
+    "legal services",
+    "Philippines",
+    "lawyers",
+    "attorneys",
+    "Go Baluyot & Adion",
+    "tarlac law firm",
+  ],
+  authors: [{ name: "John Andrei" }],
 };
 
 export default function RootLayout({
