@@ -58,7 +58,7 @@ export default async function MemberPage({ params }: MemberPageProps) {
           <div className="w-24 md:w-44 h-1 bg-accent my-4" />
 
           <p className="text-lg md:text-2xl text-center">{member.admitted}</p>
-          <Button variant="secondary">Download Summarized Profile</Button>
+          {/* <Button variant="secondary">Download Summarized Profile</Button> */}
         </div>
       </section>
       {/* ABOUT */}

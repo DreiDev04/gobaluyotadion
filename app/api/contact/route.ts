@@ -40,40 +40,29 @@ export const POST = async (req: NextRequest) => {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    const sendMail = await fetch("http://api.gobaluyotadion.com/api/mail/send",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ 
+          EmailId: email,
+          EmailName: `${firstName} ${lastName}`,
+          EmailSubject: subject,
+          EmailBody: message,
+          EmailPhone: phone
+        }),
+      }
+    );
 
-    await transporter.sendMail({
-      from: `"${firstName} ${lastName}" <${email}>`,
-      to: process.env.EMAIL_USER,
-      subject: `${subject}`,
-      text: `
-        Name: ${firstName} ${lastName}
-        Email: ${email}
-        Phone: ${phone}
-        Subject: ${subject}
-        Message:
-        ${message}
-      `,
-      html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-          <h1 style="color: #4CAF50;">New Message from GBA website</h1>
-          <p style="font-size: 12px; color: #888;">This email was sent from the GBA Mailer Website</p>
-          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Phone:</strong> ${phone}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-          <div style="margin-top: 20px; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
-            <p style="margin: 0; white-space: pre-line;"><strong>Message:</strong><br>${message}</p>
-          </div>
-        </div>
-      `,
-    });
+    if (sendMail.ok) {
+      const res = await sendMail.json();
+      console.info(res);
+    }
+    else {
+      throw new Error("Failed to send data");
+    }
 
     return NextResponse.json(
       { message: "Email sent successfully" },
