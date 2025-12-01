@@ -17,27 +17,27 @@ const partners: PartnersProp[] = [
     name: "Atty. Roberto E. Go",
     role: "Partner",
     image: "/images/partners/partners-go.png",
-    specialization: "Labor and Employment",
+    specialization: "Corporate and Real Estate",
     description:
-      "With over 15 years of experience in corporate law and banking regulations, Atty. Go leads our firm's corporate practice group.",
+      "With over 20 years in corporate law and real estate matters, Atty. Go leads our firm's corporate practice group.",
     link: "/attorneys/roberto-go",
   },
   {
     name: "Atty. Jose Marie M. Baluyot",
     role: "Partner",
     image: "/images/partners/partners-baluyot.png",
-    specialization: "Intellectual Property",
+    specialization: "Intellectual Property and Family Disputes",
     description:
-      "A respected authority in family law with extensive experience in handling complex civil litigation cases.",
+      "A respected authority in intellectual property rights cases and family law with extensive experience in handling complex legal disputes, annulment, and family governance issues. ",
     link: "/attorneys/jose-marie-baluyot",
   },
   {
     name: "Atty. Noel S. Adion",
     role: "Partner",
     image: "/images/partners/partners-adion.png",
-    specialization: "Labor and Employment",
+    specialization: "Criminal Law and Agrarian Disputes",
     description:
-      "Specializing in real estate and business law, Atty. Adion brings strategic insight to complex commercial transactions.",
+      "Specializing in agrarian matters and criminal prosecution and defense, Atty. Adion brings strategic insights and guidance to the firm's litigation team. ",
     link: "/attorneys/noel-adion",
   },
 ];
