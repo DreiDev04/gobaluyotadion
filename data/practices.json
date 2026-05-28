@@ -3,60 +3,70 @@
     "title": "Corporate & Business Law",
     "description": "Comprehensive legal solutions for businesses from formation to dissolution, covering governance, contracts, compliance, and transactions.",
     "expertise": ["Business Formation", "Corporate Governance", "Mergers & Acquisitions", "Regulatory Compliance", "Taxation", "Dispute Resolution", "Corporate Rehabilitation", "Small Claims"],
-    "icon": "🏛️"
+    "icon": "🏛️",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
   },
   {
     "title": "Criminal Prosecution & Defense",
     "description": "Skilled representation for individuals and businesses in criminal investigations, trials, and appeals.",
     "expertise": ["Preliminary Investigation", "Criminal Defense", "Appeals", "Prosecution Support"],
-    "icon": "🛡️"
+    "icon": "🛡️",
+    "image": "https://images.unsplash.com/photo-1690400524283-4e410dce7318?w=500&h=500&fit=crop"
   },
   {
     "title": "Family Law",
     "description": "Compassionate legal assistance in family and domestic matters, from marriage to child custody and protection.",
     "expertise": ["Marriage", "Annulment", "Recognition of Foreign Divorce", "Legal Separation", "Child Custody", "Child Support", "Adoption", "Domestic Violence Protection"],
-    "icon": "👨‍👩‍👧‍👦"
+    "icon": "👨‍👩‍👧‍👦",
+    "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=500&fit=crop"
   },
   {
     "title": "Intellectual Property",
     "description": "Protecting and enforcing clients' rights over creative works, inventions, and brand assets.",
     "expertise": ["Patents", "Trademarks", "Copyright", "Licensing", "Enforcement", "Registration", "Maintenance"],
-    "icon": "🔒"
+    "icon": "🔒",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=500&fit=crop"
   },
   {
-    "title": "Family & Business Governance & Succession",
+    "title": "Business Governance & Succession",
     "description": "Helping family-owned businesses create governance structures, succession plans, and agreements that ensure sustainability.",
-    "expertise": ["Family Constitution", "Succession Planning", "Pre-nuptial Agreements", "Governance Policies"],
-    "icon": "📜"
+    "expertise": ["Succession Planning", "Pre-nuptial Agreements", "Governance Policies"],
+    "icon": "📜",
+    "image": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=500&h=500&fit=crop"
   },
   {
     "title": "Labor & Employment",
     "description": "Advising employers and employees on workplace policies, contracts, and labor disputes.",
     "expertise": ["Employment Contracts", "Labor Standards Compliance", "Wrongful Termination", "Collective Bargaining", "Workplace Policies", "Dispute Resolution"],
-    "icon": "💼"
+    "icon": "💼",
+    "image": "https://images.unsplash.com/photo-1768839724944-6f7101c5a4da?w=500&h=500&fit=crop"
   },
   {
     "title": "Real Estate & Land Titles",
     "description": "Legal services for property transactions, development, titling, and disputes.",
     "expertise": ["Property Acquisition", "Leasing", "Land Titling", "Property Development", "Title Reconstitution", "Real Estate Litigation", "Recovery of Possession", "Quieting of Title"],
-    "icon": "🏢"
+    "icon": "🏢",
+    "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=500&h=500&fit=crop"
   },
   {
     "title": "Agrarian Law & Tenancy Issues",
     "description": "Guidance on agricultural land use, tenancy disputes, and related regulatory compliance.",
     "expertise": ["Agrarian Reform Compliance", "Tenancy Disputes", "Farmland Lease", "Agricultural Land Conversion"],
-    "icon": "🌾"
+    "icon": "🌾",
+    "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop"
   },
   {
     "title": "Local Government, Election, & Administrative",
     "description": "Advising on matters involving local governance, elections, and administrative proceedings.",
     "expertise": ["Local Government Powers", "Election Disputes", "Administrative Proceedings", "Public Office Eligibility", "Public Service Compliance"],
-    "icon": "🏛️"
+    "icon": "🏛️",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&h=500&fit=crop"
   },
   {
     "title": "Alternative Dispute Resolution & Arbitration",
     "description": "Resolving conflicts efficiently outside of court through mediation, arbitration, and other ADR processes.",
     "expertise": ["Mediation", "Arbitration", "Negotiated Settlements", "Conflict Resolution"],
-    "icon": "⚖️"
+    "icon": "⚖️",
+    "image": "https://images.unsplash.com/photo-1583763234164-8c2903a27122?w=500&h=500&fit=crop"
   }
 ]
