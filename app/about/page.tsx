@@ -64,7 +64,7 @@ const timelineData = [
 
 const page = () => {
   return (
-  <div className="min-h-screen bg-background fade-in">
+    <div className="min-h-screen bg-background fade-in">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -136,7 +136,8 @@ const page = () => {
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-3">Rooted in Tarlac, Trained in Manila</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-3">Rooted in Tarlac, Globally Trained
+            </h3>
             <p className="text-base text-muted-foreground leading-relaxed">
               Our partners trained at Manila's most respected law offices and worked in government service. We brought that expertise home to Tarlac—combining big-city legal sophistication with personal relationships our clients can actually trust.
             </p>
