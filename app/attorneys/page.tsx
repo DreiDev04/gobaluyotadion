@@ -269,20 +269,34 @@ const Page = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 md:py-40">
-        <div className="max-w-[1120px] mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
-              Ready to work together?
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed mb-10">
-              Our team is ready to help you navigate your legal challenges with
-              expertise and dedication.
-            </p>
-            <Button>
-              <Link href="/contact">Schedule a Consultation</Link>
-            </Button>
-          </div>
+      <section className="py-16 md:py-20 bg-background">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
+            <span className="block text-foreground">Need Legal Help?</span>
+            <span className="block font-semibold text-primary mt-2">Talk to us.</span>
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            Call, email, or visit our office in Tarlac. Our attorneys are here to listen and help.
+          </p>
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors duration-300"
+          >
+            Get in Touch
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
         </div>
       </section>
     </div>
