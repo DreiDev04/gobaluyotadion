@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import practiceAreas from "@/data/practices.json";
+import type { PracticeArea } from "@/types/practices";
 
 export default function PracticeAreasPage() {
   return (
@@ -22,7 +23,7 @@ export default function PracticeAreasPage() {
 
         {/* Practice Areas Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {practiceAreas.map((area, index) => (
+          {practiceAreas.map((area , index) => (
             <div
               key={area.title}
               className="group transition-all duration-300 hover:-translate-y-2"
