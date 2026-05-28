@@ -1,8 +1,6 @@
 "use client";
-import { motion } from "motion/react";
 import React from "react";
 import { ImagesSlider } from "@/components/ui/images-slider";
-import Image from "next/image";
 
 const Hero = () => {
   const images = [
@@ -15,24 +13,9 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-[50dvh] sm:h-screen overflow-hidden">
-      <ImagesSlider className="h-full" images={images}>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: -50,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.6,
-          }}
-          className="z-50 flex flex-col justify-center items-center"
-        ></motion.div>
-      </ImagesSlider>
+      <ImagesSlider className="h-full" images={images} />
 
-      <div className="absolute inset-0  pt-24 flex flex-col justify-center items-center px-4 text-center text-white">
+      <div className="absolute inset-0  pt-24 flex flex-col justify-center items-center px-4 text-center text-white z-50">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl sm:text-7xl font-bold tracking-tight">
             Go Baluyot & Adion

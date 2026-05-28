@@ -1,8 +1,24 @@
 import React from "react";
-import Hero from "@/components/sections/home/Hero";
-import Introduction from "@/components/sections/home/Introduction";
-import Partners from "@/components/sections/home/Partners";
-import Question from "@/components/sections/home/Question";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/sections/home/Hero"), {
+  loading: () => <div className="h-[50dvh] sm:h-screen bg-background" />,
+});
+
+const Introduction = dynamic(
+  () => import("@/components/sections/home/Introduction"),
+  {
+    loading: () => <div className="h-96 bg-background" />,
+  }
+);
+
+const Partners = dynamic(() => import("@/components/sections/home/Partners"), {
+  loading: () => <div className="h-96 bg-background" />,
+});
+
+const Question = dynamic(() => import("@/components/sections/home/Question"), {
+  loading: () => <div className="h-96 bg-background" />,
+});
 
 const page = () => {
   return (
